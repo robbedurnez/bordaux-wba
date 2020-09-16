@@ -1,0 +1,26 @@
+﻿@model AccountLoginVM
+
+<center><h1>@ViewBag.Title</h1></center>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form method="POST">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="alert-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="alert-danger"></span>
+            </div>
+            <div class="form-check">
+                <input asp-for="RememberMe" class="form-check-input" />
+                <label asp-for="RememberMe" class="form-check-label"></label>
+            </div>
+            <center><button type="submit" class="button button-link" style="margin-top: 20px;">Submit</button></center>
+        </form>
+    </div>
+</div>

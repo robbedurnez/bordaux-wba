@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj": {}
+  },
+  "projects": {
+    "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj",
+        "projectName": "BordauxLib",
+        "projectPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj",
+        "packagesPath": "/Users/robbedurnez/.nuget/packages/",
+        "outputPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/robbedurnez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100-rc.1.20452.10/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

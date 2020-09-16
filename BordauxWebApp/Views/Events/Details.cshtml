@@ -1,0 +1,36 @@
+﻿@model EventsDetailsVM
+
+@{
+    if (TempData.ContainsKey("EventUpdated"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["EventUpdated"]
+        </div>
+    }
+}
+
+<center><h1>@ViewBag.Title</h1></center>
+
+<div class="card justify-content-center">
+    <div class="card-body mx-auto">
+        <p>Name: @Model.Name</p>
+        <p>Address: @Model.AddressLine @Model.PostalCode @Model.City</p>
+        <p>From: @Model.Start</p>
+        <p>Until: @Model.End</p>
+        <p>Created by: @Model.Promotor</p>
+        <p>Acts:</p>
+        @foreach (var act in Model.Acts)
+        {
+            <p> - @act.Name</p>
+        }
+    </div>
+    @if (Model.LoggedInUserId == Model.PromotorId || User.IsInRole("Admin"))
+    {
+        <form class="mx-auto" method="get" asp-controller="Events" asp-action="UpdateEvent" asp-route-id="@Model.Id">
+            <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Edit event</button>
+        </form>
+        <div class="card-footer">
+            <a class="text-danger" asp-controller="Events" asp-action="ConfirmDeleteEvent" asp-route-id="@Model.Id">Remove event</a>
+        </div>
+    }
+</div>

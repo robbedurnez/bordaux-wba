@@ -1,0 +1,55 @@
+﻿@model List<ActsOverviewVM>
+
+@{
+    if (TempData.ContainsKey("ActNotFound"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["ActNotFound"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("ActDeleted"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["ActDeleted"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("ActUpdated"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["ActUpdated"]
+        </div>
+    }
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <form class="mx-auto" method="get" asp-controller="Acts" asp-action="CreateAct">
+            <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Create act</button>
+        </form>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between">
+        @foreach (var a in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">@a.Name</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Events</h5>
+                        @foreach (var e in a.Events)
+                        {
+                            <p class="card-text">@e</p>
+                        }
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-secondary" asp-controller="Acts" asp-action="UpdateAct" asp-route-id="@a.Id">Update</a>
+                        <a class="btn btn-secondary" asp-controller="Acts" asp-action="ConfirmDeleteAct" asp-route-id="@a.Id">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

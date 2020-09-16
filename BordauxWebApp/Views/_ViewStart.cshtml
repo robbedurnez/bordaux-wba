@@ -1,0 +1,13 @@
+﻿@{
+    var userIsAdmin = User.IsInRole("Admin");
+
+    switch (userIsAdmin)
+    {
+        case true:
+            Layout = "~/Views/Shared/_AdminLayout.cshtml";
+            break;
+        default:
+            Layout = "~/Views/Shared/_Layout.cshtml";
+            break;
+    }
+}

@@ -1,0 +1,17 @@
+﻿@if (TempData.ContainsKey("UserRegistered"))
+{
+    <div class="alert alert-info notification" role="alert">
+        @TempData["UserRegistered"]
+    </div>
+}
+
+@if (TempData.ContainsKey("UserDeleted"))
+{
+    <div class="alert alert-info notification" role="alert">
+        @TempData["UserDeleted"]
+    </div>
+}
+
+<div class="header fade-up">
+    <img class="header-logo" src="~/img/header.jpg" alt="logo">
+</div>

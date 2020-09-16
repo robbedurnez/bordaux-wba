@@ -1,0 +1,34 @@
+﻿<center><h1>@ViewBag.Title</h1></center>
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <table class="table mt-3 mx-auto w-auto">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Promotor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>View events</td>
+                    <td>View events</td>
+                </tr>
+                <tr>
+                    <td>Like events</td>
+                    <td>Like events</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Create & manage events</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <form method="post" asp-controller="Account" asp-action="UpgradeToPromotor" class="mx-auto mt-3 col-md-3">
+        <button type="submit" class="button button-link">Upgrade</button>
+    </form>
+</div>

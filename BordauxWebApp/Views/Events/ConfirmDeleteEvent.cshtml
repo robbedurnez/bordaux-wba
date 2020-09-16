@@ -1,0 +1,26 @@
+﻿@model EventsDetailsVM
+
+<center><h1>@ViewBag.Title</h1></center>
+
+<div class="card justify-content-center">
+    <div class="card-body mx-auto">
+        <p>Name: @Model.Name</p>
+        <p>Address: @Model.AddressLine @Model.PostalCode @Model.City</p>
+        <p>From: @Model.Start</p>
+        <p>Until: @Model.End</p>
+        <p>Created by: @Model.Promotor</p>
+        <p>Acts:</p>
+        @foreach (var act in Model.Acts)
+        {
+            <p> - @act.Name</p>
+        }
+    </div>
+</div>
+
+<p class="text-center">Are you sure?</p>
+<div class="row justify-content-center">
+    <form method="POST" asp-controller="Events" asp-action="DeleteEvent" asp-route-id="@Model.Id" style="margin-right: 5px;">
+        <button type="submit" class="btn btn-danger">Yes</button>
+    </form>
+    <a class="btn btn-dark" asp-controller="Events" asp-action="Overview" style="margin-left: 5px;">No</a>
+</div>

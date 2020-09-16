@@ -1,0 +1,26 @@
+﻿@model ActsOverviewVM
+
+<center><h1>@ViewBag.Title</h1></center>
+
+<div class="container-fluid">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">@Model.Name</div>
+            <div class="card-body">
+                <h5 class="card-title">Events</h5>
+                @foreach (var e in Model.Events)
+                {
+                    <p class="card-text">@e</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="text-center">Are you sure?</p>
+<div class="row justify-content-center">
+    <form method="POST" asp-controller="Acts" asp-action="DeleteAct" asp-route-id="@Model.Id" style="margin-right: 5px;">
+        <button type="submit" class="btn btn-danger">Yes</button>
+    </form>
+    <a class="btn btn-dark" asp-controller="Acts" asp-action="Overview" style="margin-left: 5px;">No</a>
+</div>

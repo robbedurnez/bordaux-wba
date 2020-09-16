@@ -1,0 +1,35 @@
+﻿@model List<AdminAccountsOverviewVM>
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="container">
+    <div class="row">
+        <form class="mx-auto" method="get" asp-controller="Admin" asp-action="CreateUser">
+            <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Create user</button>
+        </form>
+    </div>
+    <div class="d-flex flex-wrap">
+        @foreach (var user in Model)
+        {
+            var path = "~/img/" + (user.ProfilePicturePath ?? "filler.png");
+
+            <div class="card" style="width: 300px; margin: 10px;">
+                <img src=@path class="card-img-top rounded" style="width: inherit; height: 200px;" asp-append-version="true">
+                <div class="card-body">
+                    <h6 class="card-title">@user.Email</h6>
+                    <p class="card-text">Id: @user.Id</p>
+                    <p class="card-text">Name: @user.Name</p>
+                    <p class="card-text font-weight-bold">Roles:</p>
+                    @foreach(var role in user.Roles)
+                    {
+                        <p>  - @role</p>
+                    }
+                </div>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" asp-controller="Admin" asp-action="UpdateUser" asp-route-id="@user.Id">Update</a>
+                    <a class="btn btn-secondary" asp-controller="Admin" asp-action="ConfirmDeleteUser" asp-route-id="@user.Id">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

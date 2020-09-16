@@ -1,0 +1,57 @@
+﻿@model AccountOverviewVM
+
+@{
+    var path = "~/img/" + (Model.ProfilePicturePath ?? "filler.png");
+
+    if (TempData.ContainsKey("UpgradedToPromotor"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["UpgradedToPromotor"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("UpgradeFailed"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["UpgradeFailed"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("AccountUpdated"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["AccountUpdated"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("UserIsAdmin"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["UserIsAdmin"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("UserNotDeleted"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["UserNotDeleted"]
+        </div>
+    }
+}
+
+<center><h1>@ViewBag.Title</h1></center>
+
+<div class="card justify-content-center">
+    <img class="card-img-top profile-img rounded mx-auto d-block" src=@path asp-append-version="true" />
+    <div class="card-body mx-auto">
+        <p>Name: @Model.Name</p>
+        <p>Email address: @Model.Email</p>
+        <p>Account type: @Model.Role</p>
+    </div>
+    <form class="mx-auto" method="get" asp-controller="Account" asp-action="Update">
+        <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Edit account</button>
+    </form>
+    <div class="card-footer">
+        <a class="text-danger" asp-controller="Account" asp-action="ConfirmDeleteCurrentUser">Remove account</a>
+    </div>
+</div>

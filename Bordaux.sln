@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BordauxWebApp", "BordauxWebApp\BordauxWebApp.csproj", "{182B743F-1386-41D9-A587-003F2CB289BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BordauxLib", "BordauxLib\BordauxLib.csproj", "{020A77F5-3FA9-466C-9689-BBC7133A6521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{182B743F-1386-41D9-A587-003F2CB289BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182B743F-1386-41D9-A587-003F2CB289BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182B743F-1386-41D9-A587-003F2CB289BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182B743F-1386-41D9-A587-003F2CB289BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020A77F5-3FA9-466C-9689-BBC7133A6521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020A77F5-3FA9-466C-9689-BBC7133A6521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020A77F5-3FA9-466C-9689-BBC7133A6521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020A77F5-3FA9-466C-9689-BBC7133A6521}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F1450FC-0818-4B69-9D09-73A5E7951FC5}
+	EndGlobalSection
+EndGlobal

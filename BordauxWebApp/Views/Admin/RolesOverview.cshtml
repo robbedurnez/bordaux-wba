@@ -1,0 +1,38 @@
+﻿@model List<AdminRolesOverviewVM>
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="container">
+    <div class="row">
+        <form class="mx-auto" method="get" asp-controller="Admin" asp-action="CreateRole">
+            <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Create role</button>
+        </form>
+    </div>
+    <div class="d-flex flex-wrap">
+        @foreach (var role in Model)
+        {
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">@role.Name</div>
+                    <div class="card-body">
+                        @if (role.ApplicationUsers.Count == 0)
+                        {
+                            <p class="card-text">No users in this role.</p>
+                        }
+                        else
+                        {
+                            foreach (var user in role.ApplicationUsers)
+                            {
+                            <p class="card-text">@user.Email</p>
+                            }
+                        }
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-secondary" asp-controller="Admin" asp-action="UpdateRole" asp-route-id="@role.Id">Update</a>
+                        <a class="btn btn-secondary" asp-controller="Admin" asp-action="ConfirmDeleteRole" asp-route-id="@role.Id">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

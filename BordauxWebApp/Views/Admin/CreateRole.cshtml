@@ -1,0 +1,16 @@
+﻿@model AdminCreateRoleVM
+
+<center><h1 class="text-center">@ViewBag.Title</h1></center>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form method="post">
+            <div class="form-group col-md-12">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="alert-danger"></span>
+            </div>
+            <button type="submit" class="button button-link mx-auto">Submit</button>
+        </form>
+    </div>
+</div>

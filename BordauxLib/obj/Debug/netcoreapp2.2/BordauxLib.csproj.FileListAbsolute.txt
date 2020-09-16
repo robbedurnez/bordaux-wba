@@ -1,0 +1,17 @@
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.deps.json
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.dll
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.pdb
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csprojAssemblyReference.cache
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfoInputs.cache
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfo.cs
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.dll
+C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.pdb
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.deps.json
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.dll
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.pdb
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csprojAssemblyReference.cache
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfoInputs.cache
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfo.cs
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csproj.CoreCompileInputs.cache
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.dll
+/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.pdb

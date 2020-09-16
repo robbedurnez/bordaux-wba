@@ -1,0 +1,72 @@
+﻿@model EventsUpdateEventVM
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form method="POST" asp-route-id="Id">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="alert-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="StartDate"></label>
+                    <input asp-for="StartDate" class="form-control"/>
+                    <span asp-validation-for="StartDate" class="alert-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="EndDate"></label>
+                    <input asp-for="EndDate" class="form-control"/>
+                    <span asp-validation-for="EndDate" class="alert-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="StartTime"></label>
+                    <input asp-for="StartTime" class="form-control"/>
+                    <span asp-validation-for="StartTime" class="alert-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="EndTime"></label>
+                    <input asp-for="EndTime" class="form-control"/>
+                    <span asp-validation-for="EndTime" class="alert-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddressLine"></label>
+                <input asp-for="AddressLine" class="form-control"/>
+                <span asp-validation-for="AddressLine" class="alert-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostalCode"></label>
+                    <input asp-for="PostalCode" class="form-control"/>
+                    <span asp-validation-for="PostalCode" class="alert-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="City"></label>
+                    <input asp-for="City" class="form-control" value="@Model.City" />
+                    <span asp-validation-for="City" class="alert-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acts"></label>
+                <div class="checkbox-list">
+                    @for (int i = 0; i < Model.Acts.Count; i++)
+                    {
+                        <div class="custom-control custom-checkbox">
+                            <input type="hidden" asp-for="@Model.Acts[i].Id" />
+                            <input type="hidden" asp-for="@Model.Acts[i].Name" />
+                            <input asp-for="@Model.Acts[i].IsChecked" class="custom-control-input">
+                            <label asp-for="@Model.Acts[i].IsChecked" class="custom-control-label">@Model.Acts[i].Name</label>
+                        </div>
+                    }
+                </div>
+            </div>
+            <center><button type="submit" class="button button-link">Submit</button></center>
+        </form>
+    </div>
+</div>

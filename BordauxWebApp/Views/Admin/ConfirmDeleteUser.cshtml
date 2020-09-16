@@ -1,0 +1,29 @@
+﻿@model AdminAccountsOverviewVM
+
+<center><h1>Remove account</h1></center>
+
+@{
+    var path = "~/img/" + (Model.ProfilePicturePath ?? "filler.png");
+}
+
+<div class="card" style="margin: 10px;">
+    <img class="card-img-top profile-img rounded mx-auto d-block" src=@path asp-append-version="true" />
+    <div class="card-body mx-auto">
+        <h6 class="card-title">@Model.Email</h6>
+        <p class="card-text">Id: @Model.Id</p>
+        <p class="card-text">Name: @Model.Name</p>
+        <p class="card-text">Roles:</p>
+        @foreach (var role in Model.Roles)
+        {
+            <p>  - @role</p>
+        }
+    </div>
+</div>
+
+<p class="text-center">Are you sure?</p>
+<div class="row justify-content-center">
+    <form method="POST" asp-controller="Admin" asp-action="DeleteUser" asp-route-id="@Model.Id" style="margin-right: 5px;">
+        <button type="submit" class="btn btn-danger">Yes</button>
+    </form>
+    <a class="btn btn-dark" asp-controller="Admin" asp-action="AccountsOverview" style="margin-left: 5px;">No</a>
+</div>

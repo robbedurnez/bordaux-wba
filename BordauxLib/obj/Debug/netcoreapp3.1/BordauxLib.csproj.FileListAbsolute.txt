@@ -1,0 +1,5 @@
+C:\Users\robbedurnez\source\repos\permanente-evaluatie-web-backend-bordaux_7\BordauxLib\obj\Debug\netcoreapp3.1\BordauxLib.csprojAssemblyReference.cache
+C:\Users\robbedurnez\source\repos\permanente-evaluatie-web-backend-bordaux_7\BordauxLib\obj\Debug\netcoreapp3.1\BordauxLib.AssemblyInfoInputs.cache
+C:\Users\robbedurnez\source\repos\permanente-evaluatie-web-backend-bordaux_7\BordauxLib\obj\Debug\netcoreapp3.1\BordauxLib.AssemblyInfo.cs
+C:\Users\robbedurnez\source\repos\permanente-evaluatie-web-backend-bordaux_7\BordauxLib\bin\Debug\netcoreapp3.1\BordauxLib.deps.json
+C:\Users\robbedurnez\source\repos\permanente-evaluatie-web-backend-bordaux_7\BordauxLib\bin\Debug\netcoreapp3.1\BordauxLib.dll

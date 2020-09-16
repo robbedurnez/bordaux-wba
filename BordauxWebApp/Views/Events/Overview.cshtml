@@ -1,0 +1,53 @@
+﻿@model List<EventsEventVM>
+@inject UserManager<ApplicationUser> userManager
+
+@{
+    if (TempData.ContainsKey("EventNotFound"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["EventNotFound"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("NoPermission"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["NoPermission"]
+        </div>
+    }
+
+    if (TempData.ContainsKey("EventNotDeleted"))
+    {
+        <div class="alert alert-info notification" role="alert">
+            @TempData["EventNotDeleted"]
+        </div>
+    }
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="container-fluid">
+    @if (User.IsInRole("Promotor") || User.IsInRole("Admin"))
+    {
+        <div class="row">
+            <form class="mx-auto" method="get" asp-controller="Events" asp-action="CreateEvent">
+                <button style="width: 180px; margin-bottom: 20px;" class="button button-link">Create event</button>
+            </form>
+        </div>
+    }
+    <div class="d-flex flex-wrap justify-content-between">
+        @foreach (var e in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">@e.Name</div>
+                    <div class="card-body">
+                        <h5 class="card-title">@e.StartDate.Date.ToShortDateString()</h5>
+                        <p class="card-text font-weight-bold">@e.City</p>
+                    </div>
+                    <a class="btn btn-dark" asp-controller="Events" asp-action="Details" asp-route-id="@e.Id">Details</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

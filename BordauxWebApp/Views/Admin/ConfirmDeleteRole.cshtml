@@ -1,0 +1,28 @@
+﻿@model AdminRolesOverviewVM
+
+<center><h1>Remove role</h1></center>
+
+<div class="card">
+    <div class="card-header">@Model.Name</div>
+    <div class="card-body">
+        @if (Model.ApplicationUsers.Count == 0)
+        {
+            <p class="card-text">No users in this role.</p>
+        }
+        else
+        {
+            foreach (var user in Model.ApplicationUsers)
+            {
+                <p class="card-text">@user.Email</p>
+            }
+        }
+    </div>
+</div>
+
+<p class="text-center">Are you sure?</p>
+<div class="row justify-content-center">
+    <form method="POST" asp-controller="Admin" asp-action="DeleteRole" asp-route-id="@Model.Id"  style="margin-right: 5px;">
+        <button type="submit" class="btn btn-danger">Yes</button>
+    </form>
+    <a class="btn btn-dark" asp-controller="Admin" asp-action="RolesOverview"  style="margin-left: 5px;">No</a>
+</div>
