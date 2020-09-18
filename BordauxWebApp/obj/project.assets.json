@@ -12984,11 +12984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxWebApp/BordauxWebApp.csproj",
+      "projectUniqueName": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxWebApp/BordauxWebApp.csproj",
       "projectName": "BordauxWebApp",
-      "projectPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxWebApp/BordauxWebApp.csproj",
+      "projectPath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxWebApp/BordauxWebApp.csproj",
       "packagesPath": "/Users/robbedurnez/.nuget/packages/",
-      "outputPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxWebApp/obj/",
+      "outputPath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxWebApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -13006,8 +13006,8 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "projectReferences": {
-            "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj": {
-              "projectPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj"
+            "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/BordauxLib.csproj": {
+              "projectPath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/BordauxLib.csproj"
             }
           }
         }

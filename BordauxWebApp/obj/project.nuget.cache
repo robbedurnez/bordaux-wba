@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/+Z/4SjXGAktxTW9TRRkkRcntnpDqT+KORjDEQ0fZqrfcwH7v0YAoR2doR1Oat1rIhtV5poC9hfA9oRA01BZDg==",
+  "dgSpecHash": "60QeYknV3ikmSxEPyLNMs+tSx1hA4FGddnCNQ01cCgzNt7l7nEBZ0GA+b0V/7BeERK7GnwENqFARHmE0Lg1wRw==",
   "success": true,
-  "projectFilePath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxWebApp/BordauxWebApp.csproj",
+  "projectFilePath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxWebApp/BordauxWebApp.csproj",
   "expectedPackageFiles": [
     "/Users/robbedurnez/.nuget/packages/microsoft.aspnet.webapi.client/5.2.6/microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "/Users/robbedurnez/.nuget/packages/microsoft.aspnetcore/2.2.0/microsoft.aspnetcore.2.2.0.nupkg.sha512",

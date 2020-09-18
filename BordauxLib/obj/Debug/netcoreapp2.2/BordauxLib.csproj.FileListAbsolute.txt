@@ -15,3 +15,12 @@ C:/Users/robbedurnez/source/repos/permanente-evaluatie-web-backend-bordaux_7/Bor
 /Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csproj.CoreCompileInputs.cache
 /Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.dll
 /Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.pdb
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.deps.json
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.dll
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/bin/Debug/netcoreapp2.2/BordauxLib.pdb
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csprojAssemblyReference.cache
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfoInputs.cache
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.AssemblyInfo.cs
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.csproj.CoreCompileInputs.cache
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.dll
+/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/Debug/netcoreapp2.2/BordauxLib.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GpPEeFOU8IvT/QLaYkGCsrTaIZ+P4w+NMo0UrEYRw05hs67h7hliKo09tfvCXT+xUPRIt7TxWL7gtEpPBh1aQQ==",
+  "dgSpecHash": "IvT68yhLmKPbTEYFEhDIHJCzS8ZPtd2QC/rfW+wysV+nY2SstHyHGiGjPDPfWoH5pZfE9ORsxrRYHhsM5SFbHQ==",
   "success": true,
-  "projectFilePath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj",
+  "projectFilePath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/BordauxLib.csproj",
   "expectedPackageFiles": [
     "/Users/robbedurnez/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/robbedurnez/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
