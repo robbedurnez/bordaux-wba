@@ -85,6 +85,36 @@ namespace BordauxWebApp.Data
                     PromotorId = promotor.Id
                 }
                 );
+            
+            // EventActs
+            modelBuilder.Entity<EventAct>()
+                .HasData(
+                    new
+                    {
+                        EventId = eventId1,
+                        ActId = actId2
+                    },
+                    new
+                    {
+                        EventId = eventId1,
+                        ActId = actId1
+                    },
+                    new
+                    {
+                        EventId = eventId2,
+                        ActId = actId3
+                    },
+                    new
+                    {
+                        EventId = eventId3,
+                        ActId = actId1
+                    },
+                    new
+                    {
+                        EventId = eventId3,
+                        ActId = actId2
+                    }
+                );
         }
     }
 }

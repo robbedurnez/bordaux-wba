@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj",
+    "projectUniqueName": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/BordauxLib.csproj",
     "projectName": "BordauxLib",
-    "projectPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/BordauxLib.csproj",
-    "outputPath": "/Users/robbedurnez/Projects/permanente-evaluatie-web-backend-bordaux_7/BordauxLib/obj/",
+    "projectPath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/BordauxLib.csproj",
+    "outputPath": "/Users/robbedurnez/RiderProjects/bordaux-wba/BordauxLib/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
